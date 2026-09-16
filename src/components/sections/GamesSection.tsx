@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { m } from 'motion/react';
 import { Gamepad2, Zap, Star, ArrowRight } from 'lucide-react';
 
@@ -110,10 +111,13 @@ export function GamesSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/50 transition-all inline-flex items-center gap-2 group">
-            Полный список игр (60+)
+          <Link
+            href="/games"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/50 transition-all inline-flex items-center gap-2 group"
+          >
+            Весь каталог игр
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </m.div>
       </div>
     </section>

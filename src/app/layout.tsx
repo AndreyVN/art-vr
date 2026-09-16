@@ -3,6 +3,7 @@ import { MotionProvider } from '@/components/MotionProvider';
 import '../styles/index.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://art-vr.ru'),
   title: 'ART-VR — Клуб виртуальной реальности в Омске',
   description:
     '10 игровых зон с VR шлемами Meta Quest 3 последнего поколения, более 60 игр. Идеально для корпоративов, дней рождения и отдыха с друзьями. Омск, ул. 10 лет Октября, 40.',
