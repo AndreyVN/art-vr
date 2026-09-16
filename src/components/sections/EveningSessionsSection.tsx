@@ -73,7 +73,7 @@ export function EveningSessionsSection() {
                   <p className="text-purple-300 text-sm font-semibold mb-1">💰 СПЕЦИАЛЬНАЯ ЦЕНА</p>
                   <div className="flex items-end justify-center gap-3">
                     <span className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-                      1200
+                      1350
                     </span>
                     <span className="text-gray-300 text-2xl mb-2">₽</span>
                   </div>
