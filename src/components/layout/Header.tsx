@@ -11,7 +11,7 @@ type NavLink = { label: string; href?: string; id?: string };
 const navLinks: NavLink[] = [
   { label: 'Игры', href: '/games' },
   { label: 'Цены', id: 'pricing' },
-  { label: 'Праздники', id: 'packages' },
+  { label: 'Мероприятия', href: '/events' },
   { label: 'Фото', id: 'gallery' },
   { label: 'Оборудование', id: 'equipment' },
   { label: 'Отзывы', id: 'reviews' },
