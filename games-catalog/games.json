@@ -1892,7 +1892,7 @@
         "pc"
       ],
       "genre": "shooter",
-      "players": "1",
+      "players": "1-2",
       "age": "12",
       "playtime": "30-60",
       "popularity": 76,
@@ -1912,7 +1912,8 @@
       "sheet_zones": "ПК: 1-10",
       "sheet_note": "",
       "note": "",
-      "players_source": "Steam: только одиночная игра"
+      "players_source": "Steam: кооператив на двоих (online co-op)",
+      "maxPlayers": 2
     },
     {
       "title": "Raw Data",
