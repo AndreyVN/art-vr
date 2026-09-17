@@ -88,7 +88,7 @@ export default function EventsPage() {
         <EventsContentBlock />
         <EventsPhotosSection />
         <EventsGamesSection />
-        <PackagesSection />
+        <PackagesSection compact />
         <EventsFAQSection />
         <EventsAddressSection />
         <EventsToBookSection />

@@ -17,7 +17,7 @@ const games = [
 
 export function EventsGamesSection() {
   return (
-    <section id="events-games" className="py-20" style={{ backgroundColor: '#020618' }}>
+    <section id="events-games" className="py-10" style={{ backgroundColor: '#020618' }}>
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

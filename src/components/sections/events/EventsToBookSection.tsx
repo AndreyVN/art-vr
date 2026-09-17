@@ -6,7 +6,7 @@ import { site } from '@/lib/site';
 
 export function EventsToBookSection() {
   return (
-    <section id="events-book" className="py-24 relative overflow-hidden" style={{ background: 'linear-gradient(180deg,#020618,#0f172b)' }}>
+    <section id="events-book" className="py-12 relative overflow-hidden" style={{ background: 'linear-gradient(180deg,#020618,#0f172b)' }}>
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[600px] h-[600px] rounded-full blur-3xl" style={{ background: 'rgba(117,58,255,0.08)' }} />
       </div>

@@ -41,7 +41,7 @@ const features = [
 
 export function EventsContentBlock() {
   return (
-    <section id="events-content" className="py-20" style={{ backgroundColor: '#020618' }}>
+    <section id="events-content" className="py-10" style={{ backgroundColor: '#020618' }}>
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">

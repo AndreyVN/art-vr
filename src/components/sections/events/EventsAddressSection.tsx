@@ -30,7 +30,7 @@ const cards = [
 
 export function EventsAddressSection() {
   return (
-    <section id="events-address" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#020618' }}>
+    <section id="events-address" className="py-10 relative overflow-hidden" style={{ backgroundColor: '#020618' }}>
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16">
         <m.div
           initial={{ y: 20 }}

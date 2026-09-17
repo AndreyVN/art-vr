@@ -34,7 +34,7 @@ export function EventsCarouselSection() {
   const next = () => setCurrent((c) => (c + 1) % slides.length);
 
   return (
-    <section id="events-carousel" className="py-20 relative overflow-hidden" style={{ backgroundColor: '#020618' }}>
+    <section id="events-carousel" className="py-10 relative overflow-hidden" style={{ backgroundColor: '#020618' }}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(43,127,255,0.06)' }} />
 
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16 relative z-10">
