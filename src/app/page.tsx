@@ -4,14 +4,9 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { FeaturesSection } from '@/components/sections/FeaturesSection';
 import { PricingSection } from '@/components/sections/PricingSection';
 import { PackagesSection } from '@/components/sections/PackagesSection';
-import { CertificatesSection } from '@/components/sections/CertificatesSection';
 import { EveningSessionsSection } from '@/components/sections/EveningSessionsSection';
 import { GamesSection } from '@/components/sections/GamesSection';
 import { AboutSection } from '@/components/sections/AboutSection';
-import { LoungeSection } from '@/components/sections/LoungeSection';
-import { EquipmentSection } from '@/components/sections/EquipmentSection';
-import { GamingPCSection } from '@/components/sections/GamingPCSection';
-import { PlayStation5Section } from '@/components/sections/PlayStation5Section';
 import { GallerySection } from '@/components/sections/GallerySection';
 import { LocationSection } from '@/components/sections/LocationSection';
 import { ReviewsSection } from '@/components/sections/ReviewsSection';
@@ -64,14 +59,9 @@ export default function Home() {
         <FeaturesSection />
         <PricingSection />
         <PackagesSection />
-        <CertificatesSection />
         <EveningSessionsSection />
         <GamesSection />
         <AboutSection />
-        <LoungeSection />
-        <EquipmentSection />
-        <GamingPCSection />
-        <PlayStation5Section />
         <GallerySection />
         <LocationSection />
         <ReviewsSection />

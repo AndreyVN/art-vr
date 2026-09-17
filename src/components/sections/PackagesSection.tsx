@@ -1,7 +1,8 @@
 'use client';
 
+import Link from 'next/link';
 import { m } from 'motion/react';
-import { Check, Clock } from 'lucide-react';
+import { Check, Clock, Gift } from 'lucide-react';
 import { packages, packageFeatures } from '@/lib/events-content';
 
 
@@ -105,6 +106,16 @@ export function PackagesSection() {
             </p>
             <p className="text-gray-400 text-sm">*Цены указаны со скидкой</p>
           </div>
+          <p className="mt-6 text-gray-400">
+            Не знаете, что подарить?{' '}
+            <Link
+              href="/sertifikaty"
+              className="inline-flex items-center gap-1.5 text-pink-400 hover:text-pink-300 font-semibold transition-colors"
+            >
+              <Gift className="w-4 h-4" />
+              Подарочный сертификат в ART-VR
+            </Link>
+          </p>
         </m.div>
       </div>
     </section>

@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { m } from 'motion/react';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 
 const highlights = [
   '10 игровых зон с VR шлемами Meta Quest 3',
@@ -43,6 +44,13 @@ export function AboutSection() {
                 </li>
               ))}
             </ul>
+            <Link
+              href="/oborudovanie"
+              className="inline-flex items-center gap-2 mt-8 text-pink-400 hover:text-pink-300 font-semibold transition-colors"
+            >
+              Подробнее об оборудовании
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </m.div>
 
           <m.div
