@@ -6,7 +6,7 @@ import { Gamepad2, Users, Tv, Trophy, Clock, Calendar } from 'lucide-react';
 const highlights = [
   {
     icon: Gamepad2,
-    title: '60+ игр',
+    title: '70+ игр',
     description: 'Чтоб скучать не пришлось',
     border: 'border-purple-500/20 hover:border-purple-500/40',
     iconGradient: 'from-purple-500 to-pink-500',

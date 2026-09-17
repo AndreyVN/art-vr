@@ -21,8 +21,8 @@ const features = [
   },
   {
     icon: Trophy,
-    title: '60+ игр',
-    description: 'Более 60 игр в каталоге',
+    title: '70+ игр',
+    description: 'Более 70 игр в каталоге',
   },
 ];
 

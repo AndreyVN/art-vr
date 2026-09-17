@@ -73,7 +73,7 @@ export function GamesSection() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Более 60 игр в нашем каталоге — от головоломок до экшена
+            Более 70 игр в нашем каталоге — от головоломок до экшена
           </p>
         </m.div>
 

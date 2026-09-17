@@ -9,11 +9,13 @@ import { Menu, X } from 'lucide-react';
 type NavLink = { label: string; href?: string; id?: string };
 
 const navLinks: NavLink[] = [
-  { label: 'Главная', id: 'hero' },
-  { label: 'О нас', id: 'about' },
   { label: 'Игры', href: '/games' },
-  { label: 'Фото', id: 'gallery' },
   { label: 'Цены', id: 'pricing' },
+  { label: 'Праздники', id: 'packages' },
+  { label: 'Фото', id: 'gallery' },
+  { label: 'Оборудование', id: 'equipment' },
+  { label: 'Отзывы', id: 'reviews' },
+  { label: 'Контакты', id: 'location' },
 ];
 
 export function Header() {
@@ -84,14 +86,14 @@ export function Header() {
             ART-VR
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map(navItem('text-gray-300 hover:text-white transition-colors'))}
             {sectionLink('contact', 'Забронировать', bookingClass)}
           </nav>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-white"
+            className="lg:hidden text-white"
             aria-label="Открыть меню"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -99,7 +101,7 @@ export function Header() {
         </div>
 
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-blue-500/20">
+          <nav className="lg:hidden py-4 border-t border-blue-500/20">
             <div className="flex flex-col gap-4">
               {navLinks.map(navItem('text-gray-300 hover:text-white transition-colors text-left'))}
               {sectionLink('contact', 'Забронировать', `${bookingClass} text-left`)}
