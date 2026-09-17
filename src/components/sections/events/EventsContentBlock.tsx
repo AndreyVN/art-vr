@@ -16,7 +16,7 @@ const features = [
   {
     title: 'Minecraft, Roblox и Gorilla Tag',
     text: 'Популярные у детей и подростков игры прямо в VR: в одном мире одновременно играют до 10 человек — удобно для большой компании.',
-    badge: null,
+    badge: 'Только у нас',
     accent: '#00b4d8',
   },
   {
