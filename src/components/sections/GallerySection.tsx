@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { m, AnimatePresence } from 'motion/react';
-import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { galleryPhotos } from '@/lib/gallery-data';
 
 const INITIAL = 12;
@@ -50,9 +50,6 @@ export function GallerySection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-5">
-            <Camera className="w-7 h-7 text-white" />
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
             Фото в{' '}
             <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
