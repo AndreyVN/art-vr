@@ -141,8 +141,7 @@ export default function CertificatesPage() {
             <h2 className="text-2xl font-bold text-white mb-5 text-center">Сертификат можно потратить на</h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 max-w-3xl mx-auto">
               {[
-                'Более 70 VR-игр — шутеры, хорроры, квесты, симуляторы',
-                'PlayStation 5 с топовыми играми',
+                'Бронирование игровых зон',
                 'Мероприятие: день рождения, корпоратив, вечеринку',
                 'Вечерние сеансы и семейный отдых',
               ].map((t) => (
