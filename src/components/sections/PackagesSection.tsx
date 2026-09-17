@@ -4,9 +4,9 @@ import { m } from 'motion/react';
 import { Check, Clock } from 'lucide-react';
 
 const packages = [
-  { title: 'Лайт', duration: '1,5 часа', priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
-  { title: 'Стандарт', duration: '2,5 часа', priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
-  { title: 'Макси', duration: '3,5 часа', priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все 10 игровых зон включены' },
+  { title: 'Лайт', duration: '1 час', priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
+  { title: 'Стандарт', duration: '2 часа', priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
+  { title: 'Макси', duration: '3 часа', priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все 10 игровых зон включены' },
 ];
 
 // Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
