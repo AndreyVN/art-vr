@@ -13,8 +13,8 @@ const navLinks: NavLink[] = [
   { label: 'Цены', id: 'pricing' },
   { label: 'Мероприятия', href: '/events' },
   { label: 'Фото', id: 'gallery' },
-  { label: 'Сертификаты', id: 'certificates' },
-  { label: 'Оборудование', id: 'equipment' },
+  { label: 'Сертификаты', href: '/sertifikaty' },
+  { label: 'Оборудование', href: '/oborudovanie' },
   { label: 'Отзывы', id: 'reviews' },
   { label: 'Контакты', id: 'location' },
 ];
