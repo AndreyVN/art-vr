@@ -4,26 +4,12 @@ import { m } from 'motion/react';
 import { Check } from 'lucide-react';
 
 const packages = [
-  {
-    title: 'Лайт',
-    priceWeekday: '4800',
-    priceWeekend: '6400',
-    popular: false,
-  },
-  {
-    title: 'Стандарт',
-    priceWeekday: '7600',
-    priceWeekend: '10300',
-    popular: true,
-  },
-  {
-    title: 'Макси',
-    priceWeekday: '11400',
-    priceWeekend: '15300',
-    popular: false,
-  },
+  { title: 'Лайт', priceWeekday: '4800', priceWeekend: '6400', popular: false },
+  { title: 'Стандарт', priceWeekday: '7600', priceWeekend: '10300', popular: true },
+  { title: 'Макси', priceWeekday: '11400', priceWeekend: '15300', popular: false },
 ];
 
+// Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
 const packageFeatures = [
   'Цена указана за 8 игровых зон',
   '9 и 10 зоны арендуются дополнительно',
@@ -43,7 +29,7 @@ export function PackagesSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8"
+          className="text-center mb-10"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
             Тарифы для{' '}
@@ -54,71 +40,74 @@ export function PackagesSection() {
           <p className="text-gray-400">Идеально для дня рождения, корпоратива или вечеринки</p>
         </m.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Тарифы: отличаются только названием и ценой — компактные карточки */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-5xl mx-auto mb-8">
           {packages.map((pkg, index) => (
             <m.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
+              key={pkg.title}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`relative bg-gradient-to-br from-slate-800 to-slate-900 border ${
+              transition={{ delay: index * 0.08 }}
+              className={`relative rounded-2xl p-6 text-center bg-gradient-to-br from-slate-800 to-slate-900 border transition-all ${
                 pkg.popular
-                  ? 'border-pink-500/50 shadow-xl shadow-pink-500/20'
-                  : 'border-blue-500/20'
-              } rounded-2xl p-8 hover:border-pink-500/40 transition-all ${
-                pkg.popular ? 'md:scale-105' : ''
+                  ? 'border-pink-500/50 shadow-xl shadow-pink-500/20 sm:scale-105'
+                  : 'border-blue-500/20 hover:border-pink-500/40'
               }`}
             >
               {pkg.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-pink-500 to-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Популярный
-                  </span>
-                </div>
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pink-500 to-blue-500 text-white px-4 py-1 rounded-full text-xs font-semibold whitespace-nowrap">
+                  Популярный
+                </span>
               )}
-
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-white mb-4">{pkg.title}</h3>
-                <div className="mb-3">
-                  <p className="text-gray-400 text-sm mb-1">Будни</p>
-                  <div className="flex items-end justify-center gap-2">
-                    <span className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
-                      {pkg.priceWeekday}
-                    </span>
-                    <span className="text-gray-400 text-xl mb-1">₽</span>
-                  </div>
+              <h3 className="text-xl font-bold text-white mb-4 mt-1">{pkg.title}</h3>
+              <div className="flex items-stretch justify-center divide-x divide-white/10">
+                <div className="px-4">
+                  <p className="text-gray-400 text-xs mb-1">Будни</p>
+                  <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    {pkg.priceWeekday}
+                    <span className="text-gray-500 text-base font-normal"> ₽</span>
+                  </p>
                 </div>
-                <div>
-                  <p className="text-gray-400 text-sm mb-1">Выходные</p>
-                  <div className="flex items-end justify-center gap-2">
-                    <span className="text-4xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                      {pkg.priceWeekend}
-                    </span>
-                    <span className="text-gray-400 text-xl mb-1">₽</span>
-                  </div>
+                <div className="px-4">
+                  <p className="text-gray-400 text-xs mb-1">Выходные</p>
+                  <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                    {pkg.priceWeekend}
+                    <span className="text-gray-500 text-base font-normal"> ₽</span>
+                  </p>
                 </div>
               </div>
-
-              <ul className="space-y-3">
-                {packageFeatures.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-gray-300 text-sm">
-                    <Check className="w-5 h-5 text-pink-500 flex-shrink-0 mt-0.5" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
             </m.div>
           ))}
         </div>
+
+        {/* Что входит — единый блок для всех тарифов, без повторов */}
+        <m.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-5xl mx-auto rounded-2xl border border-blue-500/20 bg-slate-900/50 p-6 md:p-8"
+        >
+          <h3 className="text-lg font-semibold text-white mb-5 text-center">
+            В каждый тариф входит
+          </h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+            {packageFeatures.map((feature) => (
+              <li key={feature} className="flex items-start gap-3 text-gray-300 text-sm">
+                <Check className="w-5 h-5 text-pink-500 flex-shrink-0 mt-0.5" />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </m.div>
 
         <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-8 text-center"
         >
-          <div className="inline-block bg-gradient-to-br from-blue-500/10 to-pink-500/10 border border-blue-500/20 rounded-2xl p-6">
+          <div className="inline-block bg-gradient-to-br from-blue-500/10 to-pink-500/10 border border-blue-500/20 rounded-2xl px-6 py-5">
             <p className="text-gray-300 text-lg mb-1">
               🎉{' '}
               <span className="font-semibold text-white">
