@@ -76,7 +76,7 @@ export default function EquipmentPage() {
         <section className="py-16 bg-slate-950">
           <div className="max-w-3xl mx-auto px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Приходите играть на топовом оборудовании
+              Готовы поиграть?
             </h2>
             <p className="text-gray-400 text-lg mb-8">
               Забронируйте игровое время или мероприятие — подберём зоны и игры под вашу компанию.
