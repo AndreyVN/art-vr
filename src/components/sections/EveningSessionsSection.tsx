@@ -37,7 +37,7 @@ const highlights = [
 
 export function EveningSessionsSection() {
   return (
-    <section id="evening-sessions" className="py-20 bg-slate-950 relative overflow-hidden">
+    <section id="evening-sessions" className="py-16 bg-slate-900 relative overflow-hidden">
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
