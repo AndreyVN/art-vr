@@ -4,7 +4,7 @@ import { m } from 'motion/react';
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="py-16 bg-slate-900">
+    <section id="pricing" className="py-12 border-t border-white/10 bg-slate-900">
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16">
         <m.div
           initial={{ opacity: 0, y: 20 }}
