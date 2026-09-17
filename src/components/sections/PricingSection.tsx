@@ -12,7 +12,7 @@ export function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
             Наши{' '}
             <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
               цены
