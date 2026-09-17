@@ -4,15 +4,14 @@ import { m } from 'motion/react';
 import { Check, Clock } from 'lucide-react';
 
 const packages = [
-  { title: 'Лайт', duration: '1 час', priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
-  { title: 'Стандарт', duration: '2 часа', priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
-  { title: 'Макси', duration: '3 часа', priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все 10 игровых зон включены' },
+  { title: 'Лайт', duration: '1 час', zones: 8, priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
+  { title: 'Стандарт', duration: '2 часа', zones: 8, priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
+  { title: 'Макси', duration: '3 часа', zones: 10, priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все зоны включены' },
 ];
 
 // Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
 const packageFeatures = [
-  'Цена указана за 8 игровых зон*',
-  '9 и 10 зоны арендуются дополнительно*',
+  'Клуб работает только для гостей вашего мероприятия',
   'Зона отдыха на всё время + 30 минут после (до 16 человек)',
   'Более 70 VR игр на выбор',
   'PlayStation 5 с топовыми играми',
@@ -61,9 +60,11 @@ export function PackagesSection() {
                 </span>
               )}
               <h3 className="text-xl font-bold text-white mb-1 mt-1">{pkg.title}</h3>
-              <p className="inline-flex items-center gap-1.5 text-sm text-gray-400 mb-4">
+              <p className="inline-flex items-center gap-2 text-sm text-gray-400 mb-4">
                 <Clock className="w-4 h-4 text-pink-400" />
                 {pkg.duration}
+                <span className="text-gray-600">·</span>
+                {pkg.zones} зон
               </p>
               <div className="flex items-stretch justify-center divide-x divide-white/10">
                 <div className="px-4">
@@ -110,7 +111,7 @@ export function PackagesSection() {
             ))}
           </ul>
           <p className="text-gray-500 text-xs mt-5 text-center">
-            * В тарифе «Макси» все 10 игровых зон уже входят в стоимость.
+            Для тарифов «Лайт» и «Стандарт» указана цена за 8 игровых зон — 9-ю и 10-ю можно приобрести дополнительно.
           </p>
         </m.div>
 

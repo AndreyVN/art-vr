@@ -31,7 +31,7 @@ export function LocationSection() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/20 border border-blue-500/20">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8e3b3e3f3f3f3f3f3f3f3f3f3f3f3f3f&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?ll=73.388764%2C54.984014&z=17&pt=73.388764,54.984014,pm2rdm"
                 width="100%"
                 height="400"
                 loading="lazy"
@@ -93,7 +93,7 @@ export function LocationSection() {
             </div>
 
             <a
-              href="https://yandex.ru/maps/?text=Омск+ул.+10+лет+Октября+40"
+              href="https://yandex.ru/maps/?rtext=~54.984014,73.388764&rtt=auto&z=17"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full px-8 py-4 bg-gradient-to-r from-pink-500 to-blue-500 text-white rounded-xl text-lg font-semibold hover:shadow-2xl hover:shadow-pink-500/50 transition-all flex items-center justify-center gap-2"

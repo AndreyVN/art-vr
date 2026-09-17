@@ -57,7 +57,7 @@ export function EventsAddressSection() {
             style={{ border: '1px solid rgba(255,255,255,0.08)' }}
           >
             <iframe
-              src="https://yandex.ru/map-widget/v1/?ll=73.368782%2C54.990692&z=16&pt=73.368782,54.990692,pm2rdm"
+              src="https://yandex.ru/map-widget/v1/?ll=73.388764%2C54.984014&z=17&pt=73.388764,54.984014,pm2rdm"
               width="100%"
               height="100%"
               style={{ border: 'none', minHeight: 320 }}
@@ -101,7 +101,7 @@ export function EventsAddressSection() {
             ))}
 
             <a
-              href="https://yandex.ru/maps/?rtext=~54.990692,73.368782&rtt=auto"
+              href="https://yandex.ru/maps/?rtext=~54.984014,73.388764&rtt=auto&z=17"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl p-5 flex items-center justify-center gap-3 text-white font-semibold transition-opacity hover:opacity-90"
