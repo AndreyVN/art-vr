@@ -55,7 +55,7 @@ export function EventsHeroSection() {
               <ArrowRight className="w-5 h-5" />
             </button>
             <button
-              onClick={() => scrollTo('events-pricing')}
+              onClick={() => scrollTo('packages')}
               className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-full text-lg font-semibold hover:bg-white/20 transition-all"
             >
               Тарифы

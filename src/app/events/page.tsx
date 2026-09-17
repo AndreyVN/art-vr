@@ -4,12 +4,14 @@ import { Footer } from '@/components/layout/Footer';
 import { EventsHeroSection } from '@/components/sections/events/EventsHeroSection';
 import { EventsCarouselSection } from '@/components/sections/events/EventsCarouselSection';
 import { EventsContentBlock } from '@/components/sections/events/EventsContentBlock';
+import { EventsPhotosSection } from '@/components/sections/events/EventsPhotosSection';
 import { EventsGamesSection } from '@/components/sections/events/EventsGamesSection';
-import { EventsPricingSection } from '@/components/sections/events/EventsPricingSection';
+import { PackagesSection } from '@/components/sections/PackagesSection';
 import { EventsFAQSection } from '@/components/sections/events/EventsFAQSection';
 import { EventsAddressSection } from '@/components/sections/events/EventsAddressSection';
 import { EventsToBookSection } from '@/components/sections/events/EventsToBookSection';
-import { EventsContactSection } from '@/components/sections/events/EventsContactSection';
+// EventsContactSection (форма «Оставить заявку») временно отключена — вернуть, когда
+// будет почтовый сервер для приёма заявок.
 
 export const metadata: Metadata = {
   title: 'Мероприятия — ART-VR | Корпоративы, дни рождения, вечеринки в Омске',
@@ -43,12 +45,12 @@ export default function EventsPage() {
         <EventsHeroSection />
         <EventsCarouselSection />
         <EventsContentBlock />
+        <EventsPhotosSection />
         <EventsGamesSection />
-        <EventsPricingSection />
+        <PackagesSection />
         <EventsFAQSection />
         <EventsAddressSection />
         <EventsToBookSection />
-        <EventsContactSection />
       </main>
       <Footer />
     </div>

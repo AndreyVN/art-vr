@@ -1,12 +1,10 @@
 'use client';
 
 import { m } from 'motion/react';
-import { Calendar } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export function EventsToBookSection() {
-  const scrollTo = (id: string) =>
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-
   return (
     <section id="events-book" className="py-24 relative overflow-hidden" style={{ background: 'linear-gradient(180deg,#020618,#0f172b)' }}>
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -26,16 +24,16 @@ export function EventsToBookSection() {
             </span>
           </h2>
           <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: '#d1d5dc' }}>
-            Забронируйте мероприятие прямо сейчас и получите незабываемые впечатления!
+            Забронируйте мероприятие прямо сейчас — позвоните нам, и мы подберём дату и формат.
           </p>
-          <button
-            onClick={() => scrollTo('events-contact')}
+          <a
+            href={site.phoneHref}
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full text-white text-lg font-semibold transition-opacity hover:opacity-90"
             style={{ background: 'linear-gradient(90deg,#753aff,#6885f8)' }}
           >
-            <Calendar className="w-5 h-5" />
-            Забронировать сейчас
-          </button>
+            <Phone className="w-5 h-5" />
+            {site.phone}
+          </a>
         </m.div>
       </div>
     </section>
