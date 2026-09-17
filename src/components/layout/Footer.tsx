@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export function Footer() {
   return (
@@ -49,7 +51,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-blue-500/20 pt-8 text-center text-gray-400 text-sm">
-          © {new Date().getFullYear()} ART-VR. Все права защищены.
+          <Link href={site.rules.page} className="text-pink-400/90 hover:text-white transition-colors">
+            {site.rules.title}
+          </Link>
+          <p className="mt-3">© {new Date().getFullYear()} ART-VR. Все права защищены.</p>
         </div>
       </div>
     </footer>
