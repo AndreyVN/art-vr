@@ -2,13 +2,15 @@
 // разметке JSON-LD, поэтому лежат в отдельном (не 'use client') модуле.
 
 export const packages = [
-  { title: 'Лайт', duration: '1 час', zones: 8, priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
-  { title: 'Стандарт', duration: '2 часа', zones: 8, priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
-  { title: 'Макси', duration: '3 часа', zones: 10, priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все игровые зоны включены' },
+  { title: 'Лайт', duration: '1 час', zones: 8, priceWeekday: '4800', priceWeekend: '6400', popular: false },
+  { title: 'Стандарт', duration: '2 часа', zones: 8, priceWeekday: '7600', priceWeekend: '10300', popular: true },
+  { title: 'Макси', duration: '3 часа', zones: 8, priceWeekday: '11400', priceWeekend: '15300', popular: false },
 ];
 
 // Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
 export const packageFeatures = [
+  'В пакет входят 8 игровых зон',
+  'Игровые зоны 9 и 10 можно приобрести по необходимости',
   'Клуб работает только для гостей вашего мероприятия',
   'Зона отдыха на всё время + 30 минут после (до 16 человек)',
   'Более 70 VR игр на выбор',

@@ -49,8 +49,6 @@ export function PackagesSection() {
               <p className="inline-flex items-center gap-2 text-sm text-gray-400 mb-4">
                 <Clock className="w-4 h-4 text-pink-400" />
                 {pkg.duration}
-                <span className="text-gray-600">·</span>
-                {pkg.zones} игровых зон
               </p>
               <div className="flex items-stretch justify-center divide-x divide-white/10">
                 <div className="px-4">
@@ -68,12 +66,6 @@ export function PackagesSection() {
                   </p>
                 </div>
               </div>
-              {pkg.note && (
-                <p className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-cyan-300">
-                  <Check className="w-4 h-4" />
-                  {pkg.note}
-                </p>
-              )}
             </m.div>
           ))}
         </div>
@@ -96,9 +88,6 @@ export function PackagesSection() {
               </li>
             ))}
           </ul>
-          <p className="text-gray-500 text-xs mt-5 text-center">
-            Для тарифов «Лайт» и «Стандарт» указана цена за 8 игровых зон — 9-ю и 10-ю можно приобрести дополнительно.
-          </p>
         </m.div>
 
         <m.div
