@@ -4,6 +4,7 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { FeaturesSection } from '@/components/sections/FeaturesSection';
 import { PricingSection } from '@/components/sections/PricingSection';
 import { PackagesSection } from '@/components/sections/PackagesSection';
+import { CertificatesSection } from '@/components/sections/CertificatesSection';
 import { EveningSessionsSection } from '@/components/sections/EveningSessionsSection';
 import { GamesSection } from '@/components/sections/GamesSection';
 import { AboutSection } from '@/components/sections/AboutSection';
@@ -63,6 +64,7 @@ export default function Home() {
         <FeaturesSection />
         <PricingSection />
         <PackagesSection />
+        <CertificatesSection />
         <EveningSessionsSection />
         <GamesSection />
         <AboutSection />
