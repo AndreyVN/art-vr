@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
+import { site } from '@/lib/site';
 
 /** Пункт меню ведёт либо на отдельную страницу (href), либо на секцию главной (id). */
 type NavLink = { label: string; href?: string; id?: string };
@@ -89,7 +90,9 @@ export function Header() {
 
           <nav className="hidden xl:flex items-center gap-6">
             {navLinks.map(navItem('text-gray-300 hover:text-white transition-colors'))}
-            {sectionLink('contact', 'Забронировать', bookingClass)}
+            <a href={site.phoneHref} onClick={closeMenu} className={bookingClass}>
+              Забронировать
+            </a>
           </nav>
 
           <button
@@ -105,7 +108,9 @@ export function Header() {
           <nav className="xl:hidden py-4 border-t border-blue-500/20">
             <div className="flex flex-col gap-4">
               {navLinks.map(navItem('text-gray-300 hover:text-white transition-colors text-left'))}
-              {sectionLink('contact', 'Забронировать', `${bookingClass} text-left`)}
+              <a href={site.phoneHref} onClick={closeMenu} className={`${bookingClass} text-left`}>
+                Забронировать
+              </a>
             </div>
           </nav>
         )}

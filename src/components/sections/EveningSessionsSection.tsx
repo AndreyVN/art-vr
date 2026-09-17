@@ -2,6 +2,7 @@
 
 import { m } from 'motion/react';
 import { Gamepad2, Users, Tv, Trophy, Clock, Calendar } from 'lucide-react';
+import { site } from '@/lib/site';
 
 const highlights = [
   {
@@ -121,10 +122,13 @@ export function EveningSessionsSection() {
               </div>
 
               <div className="text-center">
-                <button className="px-10 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition-all inline-flex items-center gap-2">
+                <a
+                  href={site.phoneHref}
+                  className="px-10 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-purple-500/50 transition-all inline-flex items-center gap-2"
+                >
                   <Calendar className="w-5 h-5" />
                   Забронировать вечерний сеанс
-                </button>
+                </a>
               </div>
             </div>
           </div>

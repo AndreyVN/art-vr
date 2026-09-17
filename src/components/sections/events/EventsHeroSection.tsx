@@ -2,6 +2,7 @@
 
 import { m } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export function EventsHeroSection() {
   const scrollTo = (id: string) =>
@@ -46,14 +47,14 @@ export function EventsHeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => scrollTo('events-book')}
+            <a
+              href={site.phoneHref}
               className="px-8 py-4 text-white rounded-full text-lg font-semibold transition-all flex items-center justify-center gap-2 hover:opacity-90"
               style={{ background: 'linear-gradient(90deg,#ff006b,#7928ca)' }}
             >
               Забронировать мероприятие
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </a>
             <button
               onClick={() => scrollTo('packages')}
               className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-full text-lg font-semibold hover:bg-white/20 transition-all"

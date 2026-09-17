@@ -2,11 +2,9 @@
 
 import { m } from 'motion/react';
 import { Calendar } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export function ContactSection() {
-  const scrollToPricing = () =>
-    document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
-
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
       <div className="max-w-[1800px] mx-auto px-8 md:px-12 lg:px-16">
@@ -25,13 +23,13 @@ export function ContactSection() {
           <p className="text-gray-300 text-lg mb-8">
             Забронируйте свой сеанс прямо сейчас и получите незабываемые впечатления!
           </p>
-          <button
-            onClick={scrollToPricing}
+          <a
+            href={site.phoneHref}
             className="px-8 py-4 bg-gradient-to-r from-pink-500 to-blue-500 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-pink-500/50 transition-all inline-flex items-center gap-2"
           >
             <Calendar className="w-5 h-5" />
             Забронировать сейчас
-          </button>
+          </a>
         </m.div>
       </div>
     </section>
