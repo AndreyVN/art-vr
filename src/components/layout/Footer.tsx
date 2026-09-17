@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from 'lucide-react';
 import { site } from '@/lib/site';
 
 export function Footer() {
@@ -33,6 +33,28 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-pink-500 flex-shrink-0 mt-0.5" />
                 <a href="mailto:info@art-vr.ru" className="hover:text-white transition-colors">
                   info@art-vr.ru
+                </a>
+              </div>
+              <div className="flex items-start gap-3 text-gray-400">
+                <MessageCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <a
+                  href={site.social.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </div>
+              <div className="flex items-start gap-3 text-gray-400">
+                <Send className="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" />
+                <a
+                  href={site.social.telegram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Telegram
                 </a>
               </div>
             </div>

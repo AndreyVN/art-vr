@@ -1,7 +1,8 @@
 'use client';
 
 import { m } from 'motion/react';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock, MessageCircle, Send } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export function LocationSection() {
   return (
@@ -101,6 +102,27 @@ export function LocationSection() {
               <MapPin className="w-5 h-5" />
               Построить маршрут
             </a>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href={site.social.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-4 bg-white/5 border border-blue-500/20 text-white rounded-xl text-lg font-semibold hover:bg-white/10 hover:border-pink-500/40 transition-all flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="w-5 h-5 text-green-400" />
+                WhatsApp
+              </a>
+              <a
+                href={site.social.telegram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-4 bg-white/5 border border-blue-500/20 text-white rounded-xl text-lg font-semibold hover:bg-white/10 hover:border-pink-500/40 transition-all flex items-center justify-center gap-2"
+              >
+                <Send className="w-5 h-5 text-sky-400" />
+                Telegram
+              </a>
+            </div>
           </m.div>
         </div>
       </div>

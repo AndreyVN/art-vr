@@ -7,6 +7,11 @@ export const site = {
   emailHref: 'mailto:info@art-vr.ru',
   address: 'г. Омск, ул. 10 лет Октября, 40',
   city: 'Омск',
+  /** Мессенджеры на тот же номер, что и телефон. */
+  social: {
+    whatsapp: 'https://wa.me/79609900050',
+    telegram: 'https://t.me/+79609900050',
+  },
   /** Правила посещения: страница с текстом и исходный документ клуба. */
   rules: {
     page: '/pravila',
