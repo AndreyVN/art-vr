@@ -12,6 +12,7 @@ const navLinks: NavLink[] = [
   { label: 'Главная', id: 'hero' },
   { label: 'О нас', id: 'about' },
   { label: 'Игры', href: '/games' },
+  { label: 'Фото', id: 'gallery' },
   { label: 'Цены', id: 'pricing' },
 ];
 

@@ -11,6 +11,7 @@ import { LoungeSection } from '@/components/sections/LoungeSection';
 import { EquipmentSection } from '@/components/sections/EquipmentSection';
 import { GamingPCSection } from '@/components/sections/GamingPCSection';
 import { PlayStation5Section } from '@/components/sections/PlayStation5Section';
+import { GallerySection } from '@/components/sections/GallerySection';
 import { LocationSection } from '@/components/sections/LocationSection';
 import { ReviewsSection } from '@/components/sections/ReviewsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
@@ -31,6 +32,7 @@ export default function Home() {
         <EquipmentSection />
         <GamingPCSection />
         <PlayStation5Section />
+        <GallerySection />
         <LocationSection />
         <ReviewsSection />
         <ContactSection />
