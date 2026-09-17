@@ -17,7 +17,7 @@ const features = [
   {
     icon: Clock,
     title: 'Удобное время',
-    description: 'Работаем до 23:00 в выходные',
+    description: 'Работаем каждый день до 21:00',
   },
   {
     icon: Trophy,
