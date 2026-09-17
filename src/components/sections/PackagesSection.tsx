@@ -6,7 +6,7 @@ import { Check, Clock } from 'lucide-react';
 const packages = [
   { title: 'Лайт', duration: '1 час', zones: 8, priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
   { title: 'Стандарт', duration: '2 часа', zones: 8, priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
-  { title: 'Макси', duration: '3 часа', zones: 10, priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все зоны включены' },
+  { title: 'Макси', duration: '3 часа', zones: 10, priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все игровые зоны включены' },
 ];
 
 // Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
@@ -64,7 +64,7 @@ export function PackagesSection() {
                 <Clock className="w-4 h-4 text-pink-400" />
                 {pkg.duration}
                 <span className="text-gray-600">·</span>
-                {pkg.zones} зон
+                {pkg.zones} игровых зон
               </p>
               <div className="flex items-stretch justify-center divide-x divide-white/10">
                 <div className="px-4">
