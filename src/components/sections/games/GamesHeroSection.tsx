@@ -59,6 +59,16 @@ export function GamesHeroSection() {
             администратору, кто и с каким опытом играет, — подберём.
           </p>
 
+          <p className="mb-10">
+            <Link
+              href="/games/dlya-detey"
+              className="inline-flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300 transition-colors"
+            >
+              Ищете игры для детей? Смотрите подборку
+              <span aria-hidden="true">→</span>
+            </Link>
+          </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {stats.map((stat) => (
               <div

@@ -2,23 +2,9 @@
 
 import { m } from 'motion/react';
 import { Check, Clock } from 'lucide-react';
+import { packages, packageFeatures } from '@/lib/events-content';
 
-const packages = [
-  { title: 'Лайт', duration: '1 час', zones: 8, priceWeekday: '4800', priceWeekend: '6400', popular: false, note: '' },
-  { title: 'Стандарт', duration: '2 часа', zones: 8, priceWeekday: '7600', priceWeekend: '10300', popular: true, note: '' },
-  { title: 'Макси', duration: '3 часа', zones: 10, priceWeekday: '11400', priceWeekend: '15300', popular: false, note: 'Все игровые зоны включены' },
-];
 
-// Условия одинаковы для всех тарифов — показываем один раз, не дублируя в каждой карточке.
-const packageFeatures = [
-  'Клуб работает только для гостей вашего мероприятия',
-  'Зона отдыха на всё время + 30 минут после (до 16 человек)',
-  'Более 70 VR игр на выбор',
-  'PlayStation 5 с топовыми играми',
-  'Настольные игры для детей и взрослых',
-  'Электронные пригласительные',
-  'Поздравление именинника и вынос торта',
-];
 
 export function PackagesSection() {
   return (

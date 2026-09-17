@@ -23,13 +23,11 @@ export function HeroSection() {
           animate={{ y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <p className="text-5xl md:text-7xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Клуб виртуальной реальности
-            </span>
-          </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Клуб виртуальной реальности в Омске
+            </span>
+            <span className="block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               ART-VR
             </span>
           </h1>

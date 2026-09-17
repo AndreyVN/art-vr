@@ -8,6 +8,7 @@ import { EventsPhotosSection } from '@/components/sections/events/EventsPhotosSe
 import { EventsGamesSection } from '@/components/sections/events/EventsGamesSection';
 import { PackagesSection } from '@/components/sections/PackagesSection';
 import { EventsFAQSection } from '@/components/sections/events/EventsFAQSection';
+import { faqs, packages } from '@/lib/events-content';
 import { EventsAddressSection } from '@/components/sections/events/EventsAddressSection';
 import { EventsToBookSection } from '@/components/sections/events/EventsToBookSection';
 // EventsContactSection (форма «Оставить заявку») временно отключена — вернуть, когда
@@ -38,9 +39,48 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Главная', item: 'https://art-vr.ru' },
+        { '@type': 'ListItem', position: 2, name: 'Мероприятия' },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'Service',
+      name: 'Мероприятия в VR-клубе ART-VR',
+      serviceType: 'Проведение праздников и мероприятий',
+      areaServed: 'Омск',
+      provider: { '@type': 'EntertainmentBusiness', name: 'ART-VR', url: 'https://art-vr.ru' },
+      offers: packages.map((p) => ({
+        '@type': 'Offer',
+        name: `Тариф «${p.title}» (${p.duration})`,
+        price: p.priceWeekday,
+        priceCurrency: 'RUB',
+        description: `${p.duration}, ${p.zones} игровых зон. Будни ${p.priceWeekday} ₽, выходные ${p.priceWeekend} ₽.`,
+      })),
+    },
+  ],
+};
+
 export default function EventsPage() {
   return (
     <div className="min-h-screen bg-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main>
         <EventsHeroSection />

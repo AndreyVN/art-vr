@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${site.url}/`, lastModified: now, changeFrequency: 'monthly', priority: 1 },
     { url: `${site.url}/games`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${site.url}/games/dlya-detey`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${site.url}/events`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${site.url}${site.rules.page}`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     // Каждая игра — отдельный адрес, иначе поиск видит только один общий каталог.
