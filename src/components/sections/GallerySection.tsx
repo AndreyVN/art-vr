@@ -53,16 +53,12 @@ export function GallerySection() {
           <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-5">
             <Camera className="w-7 h-7 text-white" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
             Фото в{' '}
             <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
               клубе
             </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Как всё выглядит вживую: игровые зоны с подсветкой, зона отдыха, праздники и сами гости
-            в деле
-          </p>
         </m.div>
 
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 [column-fill:balance]">
