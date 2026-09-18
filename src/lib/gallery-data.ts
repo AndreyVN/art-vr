@@ -21,7 +21,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Девушка в VR-шлеме с контроллером у неоновой стены ART-VR',
     width: 1448,
     height: 1086,
-    home: true,
   },
   {
     src: '/images/gallery/party-cake.jpg',
@@ -34,6 +33,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Игроки в VR-шлемах в большом зале клуба с неоновой подсветкой',
     width: 1600,
     height: 876,
+    home: true,
   },
   {
     src: '/images/gallery/play-solo.jpg',
@@ -46,7 +46,6 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Двое друзей играют в VR-шлемах у неонового логотипа ART-VR',
     width: 1448,
     height: 1086,
-    home: true,
   },
   {
     src: '/images/gallery/play-hall.jpg',
@@ -89,6 +88,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Лаунж-зона клуба со столом для праздников и PlayStation 5',
     width: 1600,
     height: 1200,
+    home: true,
   },
   {
     src: '/images/gallery/play-action.jpg',
@@ -97,29 +97,29 @@ export const galleryPhotos: GalleryPhoto[] = [
     height: 1086,
   },
   {
+    src: '/images/gallery/play-neon.jpg',
+    alt: 'Гости в VR-шлемах у неонового логотипа ART-VR',
+    width: 1448,
+    height: 1086,
+  },
+  {
     src: '/images/gallery/play-duo.jpg',
     alt: 'Двое гостей играют в VR-шлемах в игровом зале',
     width: 1600,
     height: 900,
+    home: true,
   },
   {
     src: '/images/gallery/hall-interior.jpg',
     alt: 'Интерьер игрового зала с неоновой подсветкой',
     width: 1600,
     height: 1200,
+    home: true,
   },
   {
     src: '/images/gallery/ps5-pad.jpg',
     alt: 'Геймпад PlayStation 5 в зоне отдыха клуба',
     width: 1280,
     height: 960,
-    home: true,
-  },
-  {
-    src: '/images/gallery/ps5-games.jpg',
-    alt: 'PlayStation 5 с играми на большом экране',
-    width: 1600,
-    height: 1200,
-    home: true,
   },
 ];
