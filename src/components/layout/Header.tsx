@@ -16,7 +16,7 @@ const navLinks: NavLink[] = [
   { label: 'Фото', href: '/foto' },
   { label: 'Сертификаты', href: '/sertifikaty' },
   { label: 'Оборудование', href: '/oborudovanie' },
-  { label: 'Отзывы', id: 'reviews' },
+  { label: 'Отзывы', href: '/otzyvy' },
   { label: 'Контакты', id: 'location' },
 ];
 
