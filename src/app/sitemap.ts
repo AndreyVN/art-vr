@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/games`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${site.url}/games/dlya-detey`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${site.url}/events`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${site.url}/foto`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${site.url}/sertifikaty`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${site.url}/oborudovanie`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${site.url}${site.rules.page}`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },

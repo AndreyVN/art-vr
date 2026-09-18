@@ -5,6 +5,8 @@ export interface GalleryPhoto {
   alt: string;
   width: number;
   height: number;
+  /** Показывать в тизере на главной (иначе — только на странице /foto). */
+  home?: boolean;
 }
 
 export const galleryPhotos: GalleryPhoto[] = [
@@ -19,6 +21,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Девушка в VR-шлеме с контроллером у неоновой стены ART-VR',
     width: 1448,
     height: 1086,
+    home: true,
   },
   {
     src: '/images/gallery/party-cake.jpg',
@@ -43,6 +46,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Двое друзей играют в VR-шлемах у неонового логотипа ART-VR',
     width: 1448,
     height: 1086,
+    home: true,
   },
   {
     src: '/images/gallery/play-hall.jpg',
@@ -93,28 +97,10 @@ export const galleryPhotos: GalleryPhoto[] = [
     height: 1086,
   },
   {
-    src: '/images/gallery/headsets.jpg',
-    alt: 'Беспроводные VR-шлемы Meta Quest 3 клуба ART-VR',
-    width: 1600,
-    height: 1200,
-  },
-  {
-    src: '/images/gallery/play-neon.jpg',
-    alt: 'Гости в VR-шлемах у неонового логотипа ART-VR',
-    width: 1448,
-    height: 1086,
-  },
-  {
     src: '/images/gallery/play-duo.jpg',
     alt: 'Двое гостей играют в VR-шлемах в игровом зале',
     width: 1600,
     height: 900,
-  },
-  {
-    src: '/images/gallery/ps5-zone.jpg',
-    alt: 'Зона PlayStation 5 с большим экраном в клубе ART-VR',
-    width: 1600,
-    height: 1200,
   },
   {
     src: '/images/gallery/hall-interior.jpg',
@@ -127,11 +113,13 @@ export const galleryPhotos: GalleryPhoto[] = [
     alt: 'Геймпад PlayStation 5 в зоне отдыха клуба',
     width: 1280,
     height: 960,
+    home: true,
   },
   {
     src: '/images/gallery/ps5-games.jpg',
     alt: 'PlayStation 5 с играми на большом экране',
     width: 1600,
     height: 1200,
+    home: true,
   },
 ];

@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
   { label: 'Игры', href: '/games' },
   { label: 'Цены', id: 'pricing' },
   { label: 'Мероприятия', href: '/events' },
-  { label: 'Фото', id: 'gallery' },
+  { label: 'Фото', href: '/foto' },
   { label: 'Сертификаты', href: '/sertifikaty' },
   { label: 'Оборудование', href: '/oborudovanie' },
   { label: 'Отзывы', id: 'reviews' },
