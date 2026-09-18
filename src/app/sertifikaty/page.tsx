@@ -71,7 +71,7 @@ export default function CertificatesPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 Подарочный сертификат в{' '}
                 <span className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">
-                  VR-клуб ART-VR
+                  ART-VR
                 </span>
               </h1>
               <p className="text-gray-300 text-lg mb-8">
