@@ -28,7 +28,7 @@ export function HeroSection() {
             <span className="block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Клуб виртуальной реальности в Омске
             </span>
-            <span className="block bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="block mt-3 md:mt-4 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               ART-VR
             </span>
           </h1>

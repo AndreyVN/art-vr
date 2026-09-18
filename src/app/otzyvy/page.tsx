@@ -68,7 +68,7 @@ export default function ReviewsPage() {
               </span>
               <span className="text-2xl font-bold text-white">5,0</span>
               <span className="text-gray-400">
-                {reviewsAggregate.ratingsCount} оценок · {reviewsAggregate.reviewsCount} отзывов на{' '}
+                {reviewsAggregate.ratingsCount} оценки · {reviewsAggregate.reviewsCount} отзывов на{' '}
                 {reviewsAggregate.source}
               </span>
             </div>

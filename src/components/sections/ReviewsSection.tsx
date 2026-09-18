@@ -37,7 +37,7 @@ export function ReviewsSection() {
             </span>
             <span className="text-white font-bold">5,0</span>
             <span className="text-gray-400 text-sm">
-              {reviewsAggregate.ratingsCount} оценок на {reviewsAggregate.source}
+              {reviewsAggregate.ratingsCount} оценки на {reviewsAggregate.source}
             </span>
           </a>
         </m.div>
