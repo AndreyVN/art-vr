@@ -30,30 +30,6 @@ const games = [
     icon: Star,
     image: '/images/442f4e52463a34c48b3a3584a38cf7bd41080d4a.png',
   },
-  {
-    title: 'Elven Assassin',
-    description: 'Приключенческая игра с элементами фэнтези',
-    icon: Gamepad2,
-    image: '/images/34423ea5900d34a2d97c6c8497a7577e0721f534.png',
-  },
-  {
-    title: 'Pavlov VR',
-    description: 'Тактический шутер с реалистичным оружием',
-    icon: Gamepad2,
-    image: '/images/13ae498535f40f6760487f99086b909c7103670a.png',
-  },
-  {
-    title: 'I Am Cat',
-    description: 'Весёлый симулятор кота с открытым миром',
-    icon: Gamepad2,
-    image: '/images/4ce604d209daf1ffbcc226aaff6a59f58482aabb.png',
-  },
-  {
-    title: 'Propagation VR',
-    description: 'Хоррор-игра с напряжённой атмосферой',
-    icon: Gamepad2,
-    image: '/images/40e0f4e7068b7e3f4e9ec9eb23bff97262cfd557.png',
-  },
 ];
 
 export function GamesSection() {
